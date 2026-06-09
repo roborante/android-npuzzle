@@ -1,0 +1,11 @@
+build/
+app/build/
+.idea/
+.vscode/
+*.iml
+.gradle/
+local.properties*
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab

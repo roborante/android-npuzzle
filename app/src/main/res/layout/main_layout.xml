@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:ignore="Overdraw">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0375" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_fifty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9625" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/board"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/left_board"
+        app:layout_constraintEnd_toEndOf="@+id/right_board"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/board_eight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/vertical_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3333333333333" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/vertical_66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6666666666666" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.3333333333333" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal_66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6666666666666" />
+
+            <ImageView
+                android:id="@+id/back00_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_33" />
+
+            <ImageView
+                android:id="@+id/back01_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_33"
+                app:layout_constraintStart_toStartOf="@id/vertical_33"
+                app:layout_constraintEnd_toEndOf="@id/vertical_66" />
+
+            <ImageView
+                android:id="@+id/back02_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_33"
+                app:layout_constraintStart_toStartOf="@id/vertical_66"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/back10_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_33"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_66"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_33" />
+
+            <ImageView
+                android:id="@+id/back11_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_33"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_66"
+                app:layout_constraintStart_toStartOf="@id/vertical_33"
+                app:layout_constraintEnd_toEndOf="@id/vertical_66" />
+
+            <ImageView
+                android:id="@+id/back12_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_33"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_66"
+                app:layout_constraintStart_toStartOf="@id/vertical_66"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/back20_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_33" />
+
+            <ImageView
+                android:id="@+id/back21_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_33"
+                app:layout_constraintEnd_toEndOf="@id/vertical_66" />
+
+            <ImageView
+                android:id="@+id/back22_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_66"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p00_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_33" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p01_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_33"
+                app:layout_constraintStart_toStartOf="@id/vertical_33"
+                app:layout_constraintEnd_toEndOf="@id/vertical_66" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p02_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_33"
+                app:layout_constraintStart_toStartOf="@id/vertical_66"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p10_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_33"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_66"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_33" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p11_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_33"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_66"
+                app:layout_constraintStart_toStartOf="@id/vertical_33"
+                app:layout_constraintEnd_toEndOf="@id/vertical_66" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p12_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_33"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_66"
+                app:layout_constraintStart_toStartOf="@id/vertical_66"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p20_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_33" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p21_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_33"
+                app:layout_constraintEnd_toEndOf="@id/vertical_66" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p22_eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_66"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/board_fifteen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/vertical_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/vertical_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/vertical_75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.50" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal_75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <ImageView
+                android:id="@+id/back00_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <ImageView
+                android:id="@+id/back01_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <ImageView
+                android:id="@+id/back02_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <ImageView
+                android:id="@+id/back03_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/back10_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <ImageView
+                android:id="@+id/back11_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <ImageView
+                android:id="@+id/back12_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <ImageView
+                android:id="@+id/back13_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/back20_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <ImageView
+                android:id="@+id/back21_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <ImageView
+                android:id="@+id/back22_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <ImageView
+                android:id="@+id/back23_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/back30_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <ImageView
+                android:id="@+id/back31_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <ImageView
+                android:id="@+id/back32_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <ImageView
+                android:id="@+id/back33_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/t0"
+                android:contentDescription="@null"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p00_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p01_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p02_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p03_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_25"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p10_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p11_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p12_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p13_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_25"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_50"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p20_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p21_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p22_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p23_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_50"
+                app:layout_constraintBottom_toBottomOf="@id/horizontal_75"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p30_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/vertical_25" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p31_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_25"
+                app:layout_constraintEnd_toEndOf="@id/vertical_50" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p32_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_50"
+                app:layout_constraintEnd_toEndOf="@id/vertical_75" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/p33_fifteen"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="@id/horizontal_75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/vertical_75"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintStart_toEndOf="@+id/left_board"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_fifty">
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_button"
+            android:contentDescription="@null"
+            android:drawingCacheQuality="auto"
+            android:scaleType="fitXY"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/about"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/board"
+        app:layout_constraintStart_toEndOf="@+id/vertical_fifty"
+        app:layout_constraintEnd_toStartOf="@+id/right_board">
+
+        <ImageButton
+            android:id="@+id/mode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_button"
+            android:contentDescription="@null"
+            android:drawingCacheQuality="auto"
+            android:scaleType="fitXY"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/fifteen"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left_board"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_fifty">
+
+        <ImageButton
+            android:id="@+id/new_game"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_button"
+            android:contentDescription="@null"
+            android:drawingCacheQuality="auto"
+            android:scaleType="fitXY"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/new_game"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertical_fifty"
+        app:layout_constraintEnd_toStartOf="@+id/right_board">
+
+        <ImageButton
+            android:id="@+id/idaStar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_button"
+            android:contentDescription="@null"
+            android:drawingCacheQuality="auto"
+            android:scaleType="fitXY"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/magic_stick"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="@+id/board">
+
+        <ImageView
+            android:id="@+id/happy_gear_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:scaleX="0.889"
+            android:scaleY="0.889"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/happy" />
+
+        <ImageView
+            android:id="@+id/happy_gear_front"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:scaleX="0.889"
+            android:scaleY="0.889"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/happy" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_25_thumbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_25_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.26875" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_75_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.73125" />
+
+        <ImageView
+            android:id="@+id/left_thumb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_25_thumbs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vertical_75_thumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/thumb_up_left" />
+
+        <ImageView
+            android:id="@+id/right_thumb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_25_thumbs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/vertical_25_thumb"
+            app:srcCompat="@drawable/thumb_up_right" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/board"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="@+id/board">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_25_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_66_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6666666666666" />
+
+        <ImageView
+            android:id="@+id/left_gear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:scaleX="0.689"
+            android:scaleY="0.689"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/horizontal_25_anim"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/vertical_66_anim"
+            app:srcCompat="@drawable/gear" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/board"
+        app:layout_constraintBottom_toBottomOf="@id/board"
+        app:layout_constraintStart_toStartOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="@+id/board">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_75_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_33_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3333333333333" />
+
+        <ImageView
+            android:id="@+id/right_gear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@null"
+            android:scaleX="0.689"
+            android:scaleY="0.689"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/horizontal_75_anim"
+            app:layout_constraintStart_toStartOf="@id/vertical_33_anim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/gear" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/informations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:background="@drawable/backgroud_info"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:visibility="gone"
+        android:typeface="monospace"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="12sp"
+        android:textColor="#FFF" />
+
+</android.support.constraint.ConstraintLayout>

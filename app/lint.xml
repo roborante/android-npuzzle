@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="GifUsage">
+        <ignore path="src/main/res/drawable-v24/happy.gif" />
+        <ignore path="src/main/res/drawable-v24/t0.gif" />
+        <ignore path="src/main/res/drawable-v24/t0.gif" />
+        <ignore path="src/main/res/drawable/star.gif" />
+        <ignore path="src/main/res/drawable/t1.gif" />
+        <ignore path="src/main/res/drawable/t10.gif" />
+        <ignore path="src/main/res/drawable/t11.gif" />
+        <ignore path="src/main/res/drawable/t12.gif" />
+        <ignore path="src/main/res/drawable/t13.gif" />
+        <ignore path="src/main/res/drawable/t14.gif" />
+        <ignore path="src/main/res/drawable/t15.gif" />
+        <ignore path="src/main/res/drawable/t2.gif" />
+        <ignore path="src/main/res/drawable/t3.gif" />
+        <ignore path="src/main/res/drawable/t4.gif" />
+        <ignore path="src/main/res/drawable/t5.gif" />
+        <ignore path="src/main/res/drawable/t6.gif" />
+        <ignore path="src/main/res/drawable/t7.gif" />
+        <ignore path="src/main/res/drawable/t8.gif" />
+        <ignore path="src/main/res/drawable/t9.gif" />
+        <ignore path="src/main/res/drawable/t9.gif" />
+        <ignore path="src/main/res/drawable/t9.gif" />
+        <ignore path="src/main/res/drawable/t9.gif" />
+    </issue>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/about.png" />
+        <ignore path="src/main/res/drawable/camera.png" />
+        <ignore path="src/main/res/drawable/gallery.png" />
+        <ignore path="src/main/res/drawable/magic_stick.png" />
+        <ignore path="src/main/res/drawable/new_game.png" />
+        <ignore path="src/main/res/drawable/star.gif" />
+        <ignore path="src/main/res/drawable/t1.gif" />
+        <ignore path="src/main/res/drawable/t10.gif" />
+        <ignore path="src/main/res/drawable/t11.gif" />
+        <ignore path="src/main/res/drawable/t11.gif" />
+        <ignore path="src/main/res/drawable/t12.gif" />
+        <ignore path="src/main/res/drawable/t13.gif" />
+        <ignore path="src/main/res/drawable/t14.gif" />
+        <ignore path="src/main/res/drawable/t15.gif" />
+        <ignore path="src/main/res/drawable/t2.gif" />
+        <ignore path="src/main/res/drawable/t3.gif" />
+        <ignore path="src/main/res/drawable/t4.gif" />
+        <ignore path="src/main/res/drawable/t5.gif" />
+        <ignore path="src/main/res/drawable/t6.gif" />
+        <ignore path="src/main/res/drawable/t7.gif" />
+        <ignore path="src/main/res/drawable/t8.gif" />
+        <ignore path="src/main/res/drawable/t9.gif" />
+    </issue>
+</lint>

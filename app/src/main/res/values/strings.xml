@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">nPuzzle</string>
+
+    <string name="about">
+        Author: Roberto Bracaglia Morante
+        \nSoftware used: Android-Studio, GIMP and Inkscape.
+        \nNo commercial purposes, no ads, no special permissions required.
+        \n\nA couple of things to know about this app:
+        \n\nThe random generator does not cheat, it only checks if the permutation can be solved or not,
+        which means there is the chance of generating a permutation already resolved.
+        One on 181440 in case 8, and one on more than 10 trillions for case 15.
+        If that happens to you, go play the lottery now, it could be your lucky day ;)
+        \n\nThe resolution algorithm is an ida* that relies on admissible heuristic
+        (Manahattan distances and linear conflicts), its result is always an optimal solution.
+        It is written in native C++ code for performance reasons.
+        While case 8 resolves on average in less than one thousandth of a second,
+        case 15 takes on average a few seconds, a few minutes in the worst cases
+        with more than a billion of nodes expanded.
+        \n\nFor case 15 it is possible to stop the algorithm between heuristic bounds.
+        What does it mean? Let\'s say: we started the searching to resolve a permutation
+        that has initial heuristic 40, and the same parmutation takes 56 moves to be resolved.
+        After half a second we click the stop button while the search within the bound 50 in not yet complete,
+        the algorithm will continue until the end of the current limit.
+        In the meanwhile an hourglass appears on the \"magic button\",
+        and it disappears when the algorithm reaches the \"Java flag\" placed before the next heuristic bound.
+        That\'s because it is not possible to put that flag inside the C++ code unless the latter is further splitted,
+        but this would result in a performance hit that would make its implementation no more worthwhile.
+        \n\nFor performance reasons can be run only a search at a time, because
+        while the non-interactive search is still open, it would be temporarily concurrent with the new one,
+        reducing the resources available for the latter, and this is not acceptable.
+        \n\nThat\'s it!
+    </string>
+
+</resources>
